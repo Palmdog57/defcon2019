@@ -1,0 +1,38 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #ffe6ff;
+}
+
+.circleBase {
+    border-radius: 50%;
+}
+
+.type1 {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    display: inline-block;
+}
+.type2 {
+    width: 200px;
+    height: 200px;
+    background: green;
+    display: inline-block;
+}
+
+.type3 {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    display: inline-block;
+}
+
+.type4 {
+    width: 200px;
+    height: 200px;
+    background: red;
+    display: inline-block;
+}
