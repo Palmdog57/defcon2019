@@ -13,15 +13,15 @@ const exec = require('child_process').exec;
 
 console.log("Script is running...")
 
-var redLED = new Gpio(17, 'out'),
-yellowLED = new Gpio(27, 'out'),
-greenLED = new Gpio(22, 'out');
+var redLED = new Gpio(17, 'out'), //Physical pin 11
+yellowLED = new Gpio(27, 'out'), //Physical pin 13
+greenLED = new Gpio(22, 'out'); //Physical pin 15
 
 var leds = [redLED, yellowLED, greenLED];
 
-var redButton = new Gpio(21, 'in', 'both'),
-yellowButton = new Gpio(16, 'in', 'both'),
-greenButton = new Gpio(20, 'in', 'both');
+var redButton = new Gpio(21, 'in', 'both'), //Physical pin 40
+yellowButton = new Gpio(16, 'in', 'both'), //Physical pin 36
+greenButton = new Gpio(20, 'in', 'both'); //Physical pin 38
 
 var con = mysql.createConnection({
     host: "localhost",

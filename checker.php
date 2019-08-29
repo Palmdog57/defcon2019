@@ -7,7 +7,7 @@ while(1) {
     $result = mysqli_query($conn, $sql);
 
     while($row = mysqli_fetch_assoc($result)) {
-        file_put_contents('./currentStatus.js', $row["statusCode"]);
+        file_put_contents('./currentStatus.json', $row["statusCode"]);
     }
 
     usleep($loopTimeout * 1000000);
